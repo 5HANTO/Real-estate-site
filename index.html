@@ -1,19 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REAL ESTATE</title>
     <!-- Favicon link  -->
     <link rel="shortcut icon" href="https://marketplace.canva.com/EAF6nmbUlhg/1/0/1600w/canva-black-and-gold-flat-illustrative-real-estate-logo-Jj0rP4nw9ug.jpg" type="image/x-icon">
+    <!-- Font Awesome CDN  -->
+    <script src="https://kit.fontawesome.com/42df2fe0e3.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUI CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- Manrope Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Custom Code Tailwind CSS  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#ABEF5F',
+                secondary: '#ABEF5F80',
+                black: '#1C1C1C'
+              },
+            },
+          },
+        }
+      </script>
 </head>
-<body>
-    
+<body class="manrope">
+    <!-- Website Header Section  -->
+    <Header class="container mx-auto">
+      <!-- Website Navbar Section start -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start ">
+            <a class="text-3xl font-extrabold "> 
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-primary p-1 rounded-full"></i>
+              </i>Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal  px-1">
+              <li class="hover:font-bold hover:text-primary"><a>Home</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Services</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Portfolio</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Blogs</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Contact Us</a></li>
+            </ul>  
+          </div>
+          <div class="navbar-end">
+            <div class="mr-4 hidden lg:flex">
+              <a href="https://www.google.com/"><i class="fa-solid fa-magnifying-glass mr-4 bg-zinc-100 rounded-full p-2"></i></a>
+              <a href=""><i class=" fa-solid fa-cart-shopping  bg-zinc-100 rounded-full p-2"></i></a>
+            </div>
+            <a class="hidden lg:flex btn bg-primary font-bold text-base rounded-full text-black">Book Consult
+              <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full p-2"></i>
+            </a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-4">
+              <li class="hover:font-bold hover:text-primary"><a>Home</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Services</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Portfolio</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Blogs</a></li>
+              <li class="hover:font-bold hover:text-primary"><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Section End  -->
+       <!-- Hero Section start  -->
+        <section>
+        <div class="flex flex-col justify-center items-center">
+          <!-- Hero Image  -->
+          <div>
+                <img src="./assets/banner.png" alt="">
+          </div>
+          <!-- Hero content  -->
+           <div>
+            <div class="hero-content">
+              <div class="text-center">
+                <h1 class=" text-2xl lg:text-6xl font-extrabold text-[#212121] lg:leading-snug">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 text-sm lg:text-base font-medium">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek <br> accents, and large windows that flood the space.
+                </p>
+                <button>
+                  <a class="flex btn bg-secondary font-extrabold text-base border-primary rounded-full text-black px-36 lg:px-4">Book Consult
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-primary rounded-full p-2"></i>
+                  </a>
+                </button>
+              </div>
+            </div>
+           </div>
+        </div>
+        </section>
+        <!-- Hero Section End  -->
+    </Header>
+    <!-- Website Header Section End  -->
+    <!-- Website Main Section  -->
+    <Main class="container mx-auto">
+        
+    </Main>
+    <!-- Website Footer Section  -->
+    <Footer>
+
+    </Footer>
 </body>
 </html>
+
+
+
