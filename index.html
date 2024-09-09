@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REAL ESTATE</title>
     <!-- Favicon link  -->
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQ_zeh2mQd06vaB7ur37MZk9Xp3Ltrr7EUw&s" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/banner.png">
     <!-- Font Awesome CDN  -->
     <script src="https://kit.fontawesome.com/42df2fe0e3.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
@@ -33,6 +33,9 @@
                 secondary: '#ABEF5F80',
                 background: '#F4F4F4',
               },
+              backgroundImage: {
+                bgPrimary:"url('./assets/bg.jpg')"
+              }
             },
           },
         }
@@ -232,7 +235,7 @@
                 </button>
               </div>
               <h1 class=" text-2xl lg:text-5xl font-bold text-center">Our Latest Portfolio</h1>
-              <p class=" text-sm lg:text-base font-semibold text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <p class=" text-sm lg:text-base font-semibold text-center p-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
                 <!-- Card container  -->
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 p-4 mt-2">
@@ -263,7 +266,7 @@
                     </figure>
                   </div>
                   <!-- card 04 -->
-                  <div class="card flex-col order-4 lg:flex-row lg:col-span-2 p-4 bg-white border-2 shadow-2xl gap-4 items-center">
+                  <div class="card flex-col order-4 lg:flex-row lg:col-span-2 p-4 bg-white border-2 shadow-xl gap-4 items-center">
                     <figure>
                       <img src="assets/img4.png" alt="Home" />
                     </figure>
@@ -288,7 +291,7 @@
           <!-- Latest Portfolio Section End  -->
 
           <!-- Client Review Section start  -->
-            <section class="mb-12 mt-24 bg-background py-12 lg:py-24 ">
+            <section class="mb-6 mt-24 bg-background py-12 lg:py-24 ">
               <h1 class=" text-3xl lg:text-5xl font-semibold text-center">Happy Clients Says</h1>
               <!-- Clients Reviews cards  -->
                <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-64 lg:gap-12 ">
@@ -354,10 +357,76 @@
                    </div>
                </div>
             </section>
+            <!-- Let's Discuss Section start  -->
+             <section class="pb-24 bg-bgPrimary bg-no-repeat bg-cover opacity-90">
+                  <div class="space-y-8">
+                    <div class="text-center pt-24">
+                      <button>
+                        <a class="flex btn bg-secondary font-extrabold text-base border-primary rounded-full text-black">
+                          <i class="fa-solid fa-arrow-right text-black rounded-full p-2"></i>
+                            Let's Connect
+                        </a>
+                      </button>
+                    </div>
+                    <h1 class="text-3xl lg:text-5xl text-black px-12 font-bold text-center">Let's Discuss Next Project</h1>
+                    <p class=" text-sm lg:text-base font-medium p-2 text-[#494949] text-center">The barn house captivates with its blend of rustic charm and modern sophistication <br>  featuring weathered wood, sleek metal accents.</p>
+                  </div>
+                  <div class="grid lg:grid-cols-2 gap-4 p-4 lg:w-3/5 max-w-5xl mx-auto mt-12">
+                    <div>
+                      <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-md rounded-full" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-md rounded-full" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-md rounded-full" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-md rounded-full" />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center mt-6 px-4">
+                        <textarea class="textarea textarea-bordered rounded-xl " rows="7" cols="117" placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="text-center my-6">
+                      <button>
+                        <a class="flex btn bg-primary font-bold text-base border-white rounded-full text-black lg:px-96">
+                        Send Mail
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-xl p-1"></i>
+                        </a>
+                      </button>
+                    </div>
+             </section>
+             <!-- Let's Discuss Section End  -->
     </Main>
     <!-- Website Footer Section  -->
-    <Footer>
 
+    <Footer class="pt-24 bg-[#1C1C1C] container mx-auto mt-4 mb-2">
+            <div class="space-y-12">
+              <div class="text-center space-y-4 ">
+                <a class="text-3xl font-extrabold text-white "> 
+                  <i class="fa-solid fa-arrow-right -rotate-45 bg-primary p-1 rounded-full text-black"></i>
+                  </i>Rinterio
+                </a>
+                  <p class="text-sm lg:text-base p-4 font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+              </div>
+              <div class="">
+                <ul class="flex flex-col lg:flex-row items-center gap-8 justify-center text-base font-medium text-[#E9E9E9]">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+                <div class="text-center py-12">
+                  <button>
+                    <a class="lg:flex btn bg-primary font-bold text-base rounded-full text-black">Book Consult
+                      <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full p-2"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
     </Footer>
 </body>
 </html>
